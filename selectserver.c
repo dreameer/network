@@ -92,6 +92,7 @@ int main(void)
 			perror("select");
 			exit(4);
 		}
+		printf("fdmax %d:",fdmax);
 
 		for(i=0;i<=fdmax;i++){
 			if(FD_ISSET(i,&read_fds)){
